@@ -13,7 +13,7 @@ for i in range(len(dp)):
             if dp[i-1][j]:
                 dp[i][j]=True
             else:
-                nums[i-1]<=j
-                if dp[i-1][j-nums[i-1]]:
-                    dp[i][j]=True
+                if nums[i-1]<=j:
+                    if dp[i-1][j-nums[i-1]]:
+                        dp[i][j]=True
 print(dp)
